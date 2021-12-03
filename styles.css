@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: 'Inter', sans-serif;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  --font-color-1: rgb(23, 32, 75);
+  --font-color-2: rgb(118, 123, 144);
+  --font-color-3: rgb(49, 211, 174);
+
+  --link-hover: rgb(49, 211, 174);
+  --bg-color-1: rgb(49, 211, 174);
+  --bg-color-2: rgb(248, 249, 252);
+
+  font-size: 62.5%;
+  font-family: var(--font);
+  color: var(--font-color-1);
+}
+
+/* ==================
+#Globals
+================== */
+.aboutus,
+.howitworks,
+.whatiearn,
+.rewards,
+.partners,
+.security,
+.schools,
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+
+.container {
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container--flex-row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.desc {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* ==================
+   #Header
+================== */
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.menu {
+  width: 100%;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.menu--back{
+  position: initial;
+}
+
+.logo {
+  color: var(--font-color-3);
+  font-size: 2.5rem;
+  text-decoration: none;
+
+  font-family: var(--font);
+  font-weight: var(--weight-bold);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  transition: .3s ease-in;
+}
+
+.logo__text {
+  color: var(--font-color-1);
+  transition: .3s ease-in;
+}
+
+.logo:hover{
+  color: var(--font-color-1);
+}
+
+.logo__text:hover {
+  color: var(--font-color-3);
+}
+
+
+
+.menu__elements {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.menu__nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.menu__link {
+  color: var(--font-color-1);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+
+  font-family: var(--font);
+  font-weight: var(--weight-bold);
+  font-size: 1.5rem;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: rgb(49, 211, 174);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro__elements {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.intro__title {
+  color: var(--font-color-1);
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.intro__desc {
+  color: var(--font-color-2);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* ==================
+   #Main
+   ================== */
+   
+/* === #Aboutus === */
+.aboutus {
+  background-color: var(--bg-color-1);
+}
+/* === #Howitworks === */
+.howitworks {
+  background-color: var(--bg-color-2);
+}
+/* === #Whatiearn === */
+.whatiearn {
+  background-color: var(--bg-color-1);
+}
+/* === #Rewards === */
+.rewards {
+  background-color: var(--bg-color-2);
+}
+
+/* === #Security === */
+.security {
+  background-color: var(--bg-color-1);
+}
+
+/* === #Schools === */
+.schools {
+  background-color: var(--bg-color-2);
+}
+
+/* === #Partners === */
+.partners {
+  background-color: var(--bg-color-1);
+}
+
+.partners__title{
+  margin-bottom: 3rem ;
+}
+
+.partners__container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 0 auto;
+}
+
+.partner__img {
+  filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+  -webkit-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+  -moz-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+}
+
+
+
+.footer {
+  background-color: var(--bg-color-2);
+}
+
+/* ==================
+   #Footer
+================== */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links__link {
+  width: 3rem;
+  filter: invert(74%) sepia(15%) saturate(1816%) hue-rotate(114deg) brightness(95%) contrast(85%);
+  transition: 0.3s ease-in;
+}
+.social-links__link:hover {
+  position: relative;
+  top: -1rem;
+  color: var(blue);
+}
