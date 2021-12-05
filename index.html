@@ -15,7 +15,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="menu menu--back"></div>
+      <div class="header__video-layer"></div>
+      <video src="./assets/videos/video-1.mp4" class="header__video" preload="metadata" autoplay loop muted></video>
       <section class="menu" id="menu">
         <div class="container container--flex-row">
           <a href="#" class="logo">
@@ -25,7 +26,7 @@
           <nav class="menu__nav">
             <a href="#" class="menu__link">O que somos?</a>
             <a href="#" class="menu__link">Como Funciona?</a>
-            <a href="#" class="menu__link">Seja um Colaborador</a>
+            <a href="#" class="menu__link">Faça parte</a>
           </nav>
         </div>
       </section>
@@ -36,12 +37,15 @@
             Educação é tecnologia.<br />
             Tecnologia é o futuro.
           </h1>
-          <p class="intro__desc">
-            Com a chegada da pandemia, muitos alunos ficaram sem aula.<br /><br />
-            A tecnologia veio para ajudar, milhares de alunos puderam assitir
-            aulas online e estudar direto da sua casa.<br /><br />
-            Porém nem todos conseguiram por não possuir acesso a internet.
-          </p>
+          <div class="intro__desc">
+            <p>
+              Com a pandemia, milhões de alunos ficaram sem aula.<br>
+              A tecnologia permitiu aos professores darem  aulas online.<br><br>
+  
+              Mas como utilizar a tecnologia na educação,<br> se milhares de alunos ainda não tem acesso a internet?
+            </p>
+          </div>
+          <a href="" class="intro__link">Você pode ajudar!</a>
         </div>
       </section>
     </header>
@@ -49,7 +53,7 @@
       <section class="aboutus">
         <div class="container">
           <h2 class="title">O que somos?</h2>
-          <p>
+          <p class="desc">
             Somos uma comunidade focada em contribuir com a democratização ao
             acesso a internet. Ajudando assim a construir um futuro com mais
             educação onde todos fazem parte.
@@ -60,27 +64,41 @@
       <section class="howitworks">
         <div class="container">
           <h2 class="title">Como Funciona?</h2>
-          <p>Nossa comunidade gira em torno de 3 grupos fundamentais.</p>
-          <ul>
-            <li>Colaboradores</li>
-            <li>Escolas</li>
-            <li>Parceiros</li>
-          </ul>
+          <p class="desc">Nossa comunidade gira em torno de 3 grupos fundamentais.</p>
+          
+          
+          
+          <div class="persons__container">
+            <div class="person-card">
+              <div class="person-card__front">
+                <h2 class="person-card__title">Colaboradores</h2>
+
+              </div>
+              
+              <div class="person-card__back">
+                <div class="person-card__info">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ratione, accusantium maiores alias earum exercitationem minima aliquid, odio ea distinctio iusto tenetur cupiditate. Exercitationem nulla facilis ipsum esse, fugit at.
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="whatiearn">
         <div class="container">
           <h2 class="title">O que ganho compartilhando meu Wifi?</h2>
-          <p>
+          <p class="desc">
             Compartilhando sua internet com os alunos, você estará ajudando a
             construir um futuro com mais educação e mais acesso a informação.
-          </p>
-          <p>
+          </p >
+          <p class="desc">
             Mas entendemos que precisamos incentivar ainda mais pessoas a
             participarem.
           </p>
-          <p>
+          <p class="desc">
             Graças aos nossos parceiros, desenvolvemos um sistema de recompensas
             onde cada colaborador ganhará pontos para cada hora que um aluno
             utiliza seu wifi. Podendo assim acumular pontos e trocar pelas
@@ -91,25 +109,78 @@
       
       <section class="rewards">
         <div class="container">
-          <h2 class="title">Recompensas</h2>
-          <p>*** Vou por aqui uma lista de recompensasn em cards</p>
-          <p>com uma imagem e o valor de resgates em pontos***</p>
+          <div class="elements">
+            <h2 class="title">Recompensas exclusivas</h2>
+            <p class="desc">Acumule pontos e troque por recompensas preparadas especialmente pelos nossos parceiros.</p>
+          </div>
+          <div class="rewards__container">
+            <div class="reward__card" title="Plano anual do curso Ignite Rocketseat">
+              <h3 class="reward__hot reward__float reward__float--right">HOT</h3>
+              <img class="reward__float img-white" src="./assets/rocketseat.svg" alt="Logo Rocketseat" >
+              <img src="./assets/rewards/rocketseat-ignite.jpg" alt="Codificando na rockeseat" class="reward__img">
+              <div class="reward__desc">
+                <h2 class="reward__price">Plano Anual Ignite</h2>
+                <h3 class="reward__price">8500 pts</h3>
+              </div>
+            </div>
+            <div class="reward__card" title="Cupom do Ifood no valor de R$50">
+              <h3 class="reward__new reward__float reward__float--right">NEW</h3>
+              <img class="reward__float img-white" src="./assets/ifood.webp" alt="Logo ifood" >
+              <img src="./assets/rewards/hamburguer.jpg" alt="Hamburguer" class="reward__img">
+              <div class="reward__desc">
+                <h2 class="reward__price">Cupom R$50</h2>
+                <h3 class="reward__price">1000 pts</h3>
+              </div>
+            </div>
+            <div class="reward__card" title="Um mês grátis para assistir qualquer série na globoplay">
+              <img class="reward__float img-white" src="./assets/globo.webp"alt="Logo globo">
+              <img src="./assets/rewards/assitindo-globoplay-2.jpg" alt="família assitindo globoplay" class="reward__img">
+              <div class="reward__desc">
+                <h2 class="reward__price">Um mês de globoplay</h2>
+                <h3 class="reward__price">1000 pts</h3>
+              </div>
+            </div>
+            <div class="reward__card" title="Plano Premium Anual na Gamers club">
+              <img class="reward__float img-white" src="./assets/gamers-club.webp" alt="Jogando counterstrike na gamersclub" title="Plano ">
+              <img src="./assets/rewards/cs-gamersclub.jpg" alt="" class="reward__img">
+              <div class="reward__desc">
+                <h2 class="reward__price">Premium Anual</h2>
+                <h3 class="reward__price">8500 pts</h3>
+              </div>
+            </div>
+            <div class="reward__card" title="Camisa exclusiva WifiParaTodos">
+              <h3 class="reward__soon reward__float reward__float--right">em breve</h3>
+              <img src="./assets/rewards/Camiseta-wifiparatodos.png" alt="camiseta wifi para todos" class="reward__img">
+              <div class="reward__desc">
+                <h2 class="reward__price">Camiseta WifiParaTodos</h2>
+                <h3 class="reward__price">12000 pts</h3>
+              </div>
+            </div>
+            <div class="reward__card" title="Caneca exclusiva WifiParaTodos">
+              <h3 class="reward__soon reward__float reward__float--right">em breve</h3>
+              <img src="./assets/rewards/caneca-wifiparatodos.jpg" alt="Caneca wifi para todos" class="reward__img">
+              <div class="reward__desc">
+                <h2 class="reward__price">Caneca WifiParaTodos</h2>
+                <h3 class="reward__price">12000 pts</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="security">
         <div class="container">
           <h2 class="title">Mas é seguro eu compartilhar minha rede wifi?</h2>
-          <p>
+          <p class="desc">
             Não! Você pode ter sérios problemas se deixar sua rede wifi sem uma
             boa senha.
           </p>
-          <p>
+          <p class="desc">
             Foi pensando nisso que nossa comunidade desenvolveu um software focado
             na segurança dos nosso calaboradores.
           </p>
-          <p>O aluno não terá acesso ao nome da sua rede ou senha.</p>
-          <p>
+          <p class="desc">O aluno não terá acesso ao nome da sua rede ou senha.</p>
+          <p class="desc">
             Nosso aplicativo identifica as redes dos colaboradores ao redor do
             endereço do aluno. Gerando um token de acesso exclusivo e individual
             para aquelas redes.
@@ -122,8 +193,8 @@
           <h2 class="title">
             Sou professor como posso levar o projeto para minha escola?
           </h2>
-          <p>
-            Você poderá fazer solicitar o cadastro da sua escola. E nossa equipe
+          <p class="desc">
+            Você poderá cadastrar sua escola. Nossa equipe
             entrará em contato direto. Assim disponibilizando o acesso ao cadastro
             dos alunos.
           </p>
@@ -150,21 +221,26 @@
       </section>
 
     </main>
+    <div class="div-line"></div>
     <footer class="footer"> 
       <div class="container container--flex-row">
-        <section>
-          <ul>
-            <li>**Não sei o que por aqui ainda**</li>
+        <section class="contactus">
+          <ul class="contactus__list" >
+            <li class="contactus__title"><h2 class="title">Fale conosco!</h2></li>
+            <li class="contactus__item"><img class="contactus__item-img"src="./assets/icons/phone.svg" alt="telefone">(021) 555-0103</li>
+            <li class="contactus__item"><img class="contactus__item-img"src="./assets/icons/location.svg" alt="localização">
+              Rua Araruama, 2156 - Rio de janeiro.</li>
+            <li class="contactus__item"><img class="contactus__item-img"src="./assets/icons/email.svg" alt="email">contato@wifiparatodos.com.br</li>
           </ul>
         </section>
         <section class="social-links">
           <a href="#" class="social-links__link">
-            <img src="./assets/facebook.svg"  alt="Facebook Logo" title="Facebook" />
+            <img src="./assets/icons/facebook.svg"  alt="Facebook Logo" title="Facebook" />
           </a>
           <a href="#" class="social-links__link">
-            <img src="./assets/instagram.svg" alt="Instagram Logo" title="Instagram" />
+            <img src="./assets/icons/instagram.svg" alt="Instagram Logo" title="Instagram" />
           </a>
-          <a href="#" class="social-links__link"><img src="./assets/twitter.svg" alt="Twitter Logo" title="Twitter" /></a>
+          <a href="#" class="social-links__link"><img src="./assets/icons/twitter.svg" alt="Twitter Logo" title="Twitter" /></a>
         </section>
       </div>
     </footer>

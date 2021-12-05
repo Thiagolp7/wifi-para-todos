@@ -17,6 +17,22 @@
   --link-hover: rgb(49, 211, 174);
   --bg-color-1: rgb(49, 211, 174);
   --bg-color-2: rgb(248, 249, 252);
+  --bg-color-3: rgb(23, 32, 75);
+
+  --shadow: rgba(23, 32, 75, 0.4);
+  --transparent: 23, 32, 75;
+
+
+  
+  --partner-img-color: brightness(0%) saturate(0%) contrast(1000%) invert(100%); 
+  
+  --contactus-item-img-color: invert(82%) sepia(65%) saturate(758%) hue-rotate(94deg) brightness(101%) contrast(65%);
+  
+  --social-links-link-color: invert(100%) sepia(98%) saturate(7%) hue-rotate(114deg)
+  brightness(103%) contrast(103%);
+
+  --social-links-link-color-hover:invert(74%) sepia(15%) saturate(1816%) hue-rotate(114deg)
+  brightness(95%) contrast(85%);
 
   font-size: 62.5%;
   font-family: var(--font);
@@ -38,7 +54,7 @@
   display: flex;
   justify-content: center;
   padding: 3rem 0;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .container {
@@ -55,18 +71,25 @@
 .title {
   font-size: 2rem;
   line-height: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 .desc {
   font-size: 1.5rem;
   line-height: 2rem;
+  margin-bottom: 1rem;
 }
+
+/* body {
+  background: url(./assets/bg-drawn.svg);
+} */
 
 /* ==================
    #Header
 ================== */
 .header {
-  width: 100vw;
+  width: 100%;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -74,21 +97,36 @@
   gap: 2rem;
   padding-bottom: 2rem;
   position: relative;
-  background: url(./assets/bg-drawn.svg);
+  overflow: hidden;
 }
+
+.header__video,
+.header__video-layer{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  bottom: 0;
+}
+.header__video{
+  z-index: 0;
+}
+.header__video-layer{
+  background-color: rgba(0,0,50, 0.6);
+  z-index: 1;
+}
+
+
 
 .menu {
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
-}
-
-.menu--back{
-  position: initial;
+  left: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -102,23 +140,21 @@
   align-items: center;
   gap: 1rem;
 
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .logo__text {
-  color: var(--font-color-1);
-  transition: .3s ease-in;
+  color: white;
+  transition: 0.3s ease-in;
 }
 
-.logo:hover{
+.logo:hover {
   color: var(--font-color-1);
 }
 
 .logo__text:hover {
   color: var(--font-color-3);
 }
-
-
 
 .menu__elements {
   width: 100%;
@@ -139,7 +175,7 @@
 }
 
 .menu__link {
-  color: var(--font-color-1);
+  color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
 
@@ -158,34 +194,59 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  
+  position: relative;
+  z-index: 100;
+  /* background-color: rgba(49, 211, 174, 0.5); */
+  border-radius: 2rem;
 }
 
 .intro__elements {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   padding: 2rem;
   border-radius: 2rem;
 }
 
 .intro__title {
-  color: var(--font-color-1);
-  font-size: 3rem;
-  line-height: 3rem;
+  color: white;
+  font-size: 4rem;
+  line-height: 4.5rem;
 }
 
 .intro__desc {
-  color: var(--font-color-2);
-  font-size: 1.5rem;
-  line-height: 2rem;
+  width: 70%;
+  color: var(--bg-color-1);
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.intro__link{
+  width: 30rem;
+  padding: 2rem 2rem;
+  background-color: rgb(255, 123, 180);
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 700;
+  /* margin-top: 5rem; */
+}
+.intro__link:hover{
+  background-color: rgba(255, 100, 180,0.9);
+
 }
 
 /* ==================
    #Main
    ================== */
-   
+
+.main {
+  width: 100%;
+}
+
 /* === #Aboutus === */
 .aboutus {
   background-color: var(--bg-color-1);
@@ -194,6 +255,85 @@
 .howitworks {
   background-color: var(--bg-color-2);
 }
+
+.persons__container{
+  display: flex;
+  
+}
+
+.person-card{
+  width: 30rem;
+  height: 50rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  perspective: 1000px;
+}
+
+
+.person-card__front, .person-card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 700ms;
+}
+
+.person-card__front{
+  background-color: red;
+  z-index: 21;
+}
+
+.person-card__back{
+  background-color: blue;
+  transform: rotateY(-180deg);
+}
+
+.person-card:hover .person-card__front{
+  transform: rotateY(180deg);
+  z-index: 20;
+}
+.person-card:hover .person-card__back{
+  transform: rotateY(0);
+  z-index: 21;
+}
+
+.person-card__title{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  z-index: 21;
+}
+
+.person-card__img{
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+}
+
+.person-card__info{
+  position: absolute;
+  z-index: 23;
+  /* background-color: red; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 92%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* === #Whatiearn === */
 .whatiearn {
   background-color: var(--bg-color-1);
@@ -201,6 +341,101 @@
 /* === #Rewards === */
 .rewards {
   background-color: var(--bg-color-2);
+}
+
+.rewards__container {
+  /* height: 25rem; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.reward__card {
+  width: 30rem;
+  height: 19rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  overflow: hidden;
+
+  /* border-radius: 2rem; */
+  background-color: var(--bg-color-1);
+  box-shadow: 0.1rem 0.2rem 0.9rem var(--shadow);
+
+  position: relative;
+  transition: .3s ease-in;
+}
+
+.reward__card:hover{
+  top: -.5rem;
+}
+
+
+.reward__float {
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--font-color-2);
+  font-size: 1.5rem;
+}
+
+.reward__hot,
+.reward__new,
+.reward__soon {
+  color: white;
+  font-weight: var(--weight-bold);
+  padding: 0 .5rem;
+  border-radius: 0.5rem;
+}
+
+
+.reward__hot {
+  background-color: red;
+}
+.reward__new {
+  background-color: blue;
+}
+.reward__soon{
+  background-color: green;
+}
+
+.reward__float--right {
+  left: initial;
+  right: 1rem;
+}
+
+.img-white {
+  filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+  -webkit-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+  -moz-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+}
+
+.reward__img {
+  width: 100%;
+}
+
+.reward__desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  bottom: 1rem;
+
+  padding: 0.5rem 1rem;
+  background-color: rgba(var(--transparent), 0.6);
+}
+
+.reward__price {
+  color: var(--bg-color-2);
 }
 
 /* === #Security === */
@@ -218,8 +453,8 @@
   background-color: var(--bg-color-1);
 }
 
-.partners__title{
-  margin-bottom: 3rem ;
+.partners__title {
+  margin-bottom: 3rem;
 }
 
 .partners__container {
@@ -232,34 +467,66 @@
 }
 
 .partner__img {
-  filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
-  -webkit-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
-  -moz-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+  filter: var(--partner-img-color);
+  -webkit-filter: var(--partner-img-color);
+  -moz-filter: var(--partner-img-color);
 }
 
 
-
 .footer {
-  background-color: var(--bg-color-2);
+  background-color: var(--bg-color-3);
 }
 
 /* ==================
    #Footer
 ================== */
 
-.social-links {
+.div-line {
+  background-color: var(--bg-color-2);
+  height: 0.2rem;
+  width: 100%;
+}
+
+.contactus__list{
+  text-decoration: none;
+  list-style: none;
+}
+
+.contactus__item{
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  font-size: 1.5rem;
+  font-family: var(--font);
+  margin-bottom: 1rem;
+
+}
+
+.contactus__item-img{
+  width: 2rem;
+  filter: var(--contactus-item-img-color);
+  -webkit-filter: var(--contactus-item-img-color);
+  -moz-filter: var(--contactus-item-img-color);
+}
+
+.contactus {
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .social-links__link {
   width: 3rem;
-  filter: invert(74%) sepia(15%) saturate(1816%) hue-rotate(114deg) brightness(95%) contrast(85%);
-  transition: 0.3s ease-in;
+  filter: var(--social-links-link-color);
+  transition: 0.1s ease-in;
 }
 .social-links__link:hover {
   position: relative;
-  top: -1rem;
-  color: var(blue);
+  top: -0.5rem;
+  filter: var(--social-links-link-color-hover);
 }
