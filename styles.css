@@ -37,6 +37,8 @@
   font-size: 62.5%;
   font-family: var(--font);
   color: var(--font-color-1);
+
+  scroll-behavior: smooth;
 }
 
 /* ==================
@@ -46,21 +48,31 @@
 .howitworks,
 .whatiearn,
 .rewards,
-.partners,
 .security,
 .schools,
+.partners,
 .footer {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 3rem 0;
   gap: 5rem;
+  position: relative;
+}
+
+.partners,
+.footer{
+  height: auto;
+  position: initial;
 }
 
 .container {
   width: 100rem;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .container--flex-row {
@@ -80,16 +92,50 @@
   margin-bottom: 1rem;
 }
 
-/* body {
-  background: url(./assets/bg-drawn.svg);
-} */
+
+.page-next,
+.page-next__link{
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  position: absolute;
+}
+.page-next{
+  background-color: var(--bg-color-1);
+  width: 100%;
+  height: 3rem;
+  bottom: 0;
+  left: 0;
+  border-radius: 10rem 10rem 0 0;
+}
+
+.page-next--white{
+  background-color: white;
+}
+
+.page-next__link{
+  padding: 2rem;
+  top: -8rem;
+}
+
+.page-next__img{
+  width: 3rem;
+  filter: var(--partner-img-color);
+  -webkit-filter: var(--partner-img-color);
+  -moz-filter: var(--partner-img-color);
+  transition: .2s ease-in;
+}
+.page-next__img:hover{
+  transform: scale(1.5) ;
+
+}
 
 /* ==================
    #Header
 ================== */
 .header {
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -114,8 +160,6 @@
   background-color: rgba(0,0,50, 0.6);
   z-index: 1;
 }
-
-
 
 .menu {
   width: 100%;
@@ -196,7 +240,6 @@
   gap: 1rem;
   position: relative;
   z-index: 100;
-  /* background-color: rgba(49, 211, 174, 0.5); */
   border-radius: 2rem;
 }
 
@@ -232,7 +275,6 @@
   border-radius: 1rem;
   text-align: center;
   font-weight: 700;
-  /* margin-top: 5rem; */
 }
 .intro__link:hover{
   background-color: rgba(255, 100, 180,0.9);
@@ -321,19 +363,6 @@
   height: 92%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* === #Whatiearn === */
 .whatiearn {
   background-color: var(--bg-color-1);
@@ -364,7 +393,6 @@
   gap: 1rem;
   overflow: hidden;
 
-  /* border-radius: 2rem; */
   background-color: var(--bg-color-1);
   box-shadow: 0.1rem 0.2rem 0.9rem var(--shadow);
 
@@ -394,7 +422,6 @@
   padding: 0 .5rem;
   border-radius: 0.5rem;
 }
-
 
 .reward__hot {
   background-color: red;
@@ -471,7 +498,6 @@
   -webkit-filter: var(--partner-img-color);
   -moz-filter: var(--partner-img-color);
 }
-
 
 .footer {
   background-color: var(--bg-color-3);
