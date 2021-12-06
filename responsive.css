@@ -1,0 +1,41 @@
+@media screen and (max-width: 1000px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    height: initial;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .intro__elements {
+    margin: 10rem auto;
+  }
+
+  .card__art {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--card-partners-color);
+    right: 1rem;
+    top: 2rem;
+    z-index: 2;
+    padding: initial;
+  }
+
+  .card__art--border-schools {
+    border-color: var(--card-schools-color);
+  }
+  .card__art--border-colaborator {
+    border-color: var(--card-collaborator-color);
+  }
+
+  .card__art-img {
+    min-width: 100%;
+    height: 70%;
+    border-radius: 50%;
+  }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> 
@@ -18,7 +19,7 @@
       <div class="header__video-layer"></div>
       <video src="./assets/videos/video-1.mp4" class="header__video" preload="metadata" autoplay loop muted></video>
       <section class="menu" id="menu">
-        <div class="container container--flex-row">
+        <div class="container container--menu container--flex-row ">
           <a href="#" class="logo">
             <i class="fas fa-wifi"></i>
             <span><span class="logo__text">&lt;</span>&#47<span class="logo__text">WifiParaTodos</span>!<span class="logo__text">&gt;</span></span>
@@ -30,7 +31,7 @@
           </nav>
         </div>
       </section>
-      <section class="intro container">
+      <section class="intro container" id="intro">
         <div class="intro__elements">
           <h1 class="intro__title">
             O futuro é educação.<br />
@@ -48,62 +49,112 @@
           <a href="#aboutus" class="intro__link">Você pode ajudar!</a>
         </div>
       </section>
-      <div class="page-next">
+      <div class="page-next section-color-2">
         <a class="page-next__link" href="#aboutus"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
       </div>
     </header>
     <main>
-      <section class="aboutus" id="aboutus">
-        <div class="container">
-          <h2 class="title">O que somos?</h2>
-          <p class="desc">
-            Somos uma comunidade focada em contribuir com a democratização ao
-            acesso a internet. <br>Ajudando assim a construir um futuro com mais
-            educação onde todos fazem parte.
-            <p class="desc">
-              Desenvolveremos um aplicativo, onde os alunos poderam encontrar e se conectar a pontos de wifis públicos, além das redes dos colaboradores que se encontram perto de sua residência.  
-
-            </p>
-          </p>
-
-
-
-        </div>
-        <div class="page-next page-next--white">
-          <a class="page-next__link" href="#howitworks"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
-        </div>
-      </section>
-
-      <section class="howitworks" id="howitworks">
-        <div class="container">
-          <h2 class="title">Como Funciona?</h2>
-          <p class="desc">Nossa comunidade gira em torno de 3 grupos fundamentais.</p>
-          
-          
-          
-          <div class="persons__container">
-            <div class="person-card">
-              <div class="person-card__front">
-                <h2 class="person-card__title">Colaboradores</h2>
-
-              </div>
-              
-              <div class="person-card__back">
-                <div class="person-card__info">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ratione, accusantium maiores alias earum exercitationem minima aliquid, odio ea distinctio iusto tenetur cupiditate. Exercitationem nulla facilis ipsum esse, fugit at.
-                </div>
-
-              </div>
-              
+      <section class="aboutus  section-color-2" id="aboutus">
+        <div class="container container--flex-row">
+          <div class="container__text">
+            <div class="title">
+              <h2 class="title">O que somos?</h2>
+            </div>
+            <div>
+              <p class="desc"> 
+                Somos uma comunidade focada em contribuir com a democratização ao
+                acesso a internet. Ajudando assim a construir um futuro com mais
+                educação onde todos fazem parte.
+              </p>
+              <p class="desc">
+                Desenvolveremos um aplicativo, onde os alunos poderam encontrar e se conectar a pontos de wifis públicos, além das redes dos colaboradores que se encontram perto de sua residência.  
+              </p>
             </div>
           </div>
+          <div class="container__art">
+            <img src="./assets/imgs/kids-1.png" alt="localização arte" class="container__img">
+          </div>
         </div>
-        <div class="page-next">
+        <div class="page-next section-color-1">
           <a class="page-next__link" href="#howitworks"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
         </div>
       </section>
 
-      <section class="whatiearn">
+      <section class="howitworks section-color-1" id="howitworks">
+        <div class="container">
+          <div class="container__text">
+            <h2 class="title">Como Funciona?</h2>
+            <p class="desc desc--color">Nossa comunidade gira em torno de 3 grupos fundamentais.</p>
+
+          </div>
+          
+          <div class="cards__container">
+            <div class="card">
+              <div class="card__title">
+                <div class="card__title-number card__title-number--border-collaborator">
+                  <h2 class="card__title-text card__title-text--collaborator">1</h2>
+                </div>
+                <h2 class="card__title-text card__title-text--collaborator">Colaboradores</h2>
+              </div>
+              <div class="card__art card__art--border-colaborator">
+                <img src="./assets/imgs/colaborador.svg" class="card__art-img" alt="">
+              </div>
+              <div class="card__desc card__desc--bg-collaborator">
+                  <ul class="card__list">
+                    <li class="card__list-item">Acredita que o acesso a internet é fundamental.</li>
+                    <li class="card__list-item">Se cadastra no nosso site para compartilhar seu wifi.</li>
+                    <li class="card__list-item">Ganha pontos por cada hora que um aluno utiliza seu wifi.</li>
+                    <li class="card__list-item">Acumula seus pontos e troca por recompensas exclusivas.</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__title">
+                <div class="card__title-number">
+                  <h2 class="card__title-text">2</h2>
+                </div>
+                <h2 class="card__title-text">Parceiros</h2>
+              </div>
+              <div class="card__art">
+                <img src="./assets/imgs/partners.svg" class="card__art-img" alt="">
+              </div>
+              <div class="card__desc">
+                  <ul class="card__list">
+                    <li class="card__list-item">Acredita que o acesso a internet é fundamental.</li>
+                    <li class="card__list-item">Se cadastra no nosso site para compartilhar seu wifi.</li>
+                    <li class="card__list-item">Ganha pontos por cada hora que um aluno utiliza seu wifi.</li>
+                    <li class="card__list-item">Acumula seus pontos e troca por recompensas exclusivas.</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__title">
+                <div class="card__title-number card__title-number--border-schools">
+                  <h2 class="card__title-text card__title-text--schools">3</h2>
+                </div>
+                <h2 class="card__title-text card__title-text--schools">Escolas</h2>
+              </div>
+              <div class="card__art card__art--border-schools">
+                <img src="./assets/imgs/schools.svg" class="card__art-img" alt="">
+              </div>
+              <div class="card__desc card__desc--bg-schools">
+                  <ul class="card__list">
+                    <li class="card__list-item">Acredita que o acesso a internet é fundamental.</li>
+                    <li class="card__list-item">Se cadastra no nosso site para compartilhar seu wifi.</li>
+                    <li class="card__list-item">Ganha pontos por cada hora que um aluno utiliza seu wifi.</li>
+                    <li class="card__list-item">Acumula seus pontos e troca por recompensas exclusivas.</li>
+                  </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="page-next section-color-2">
+          <a class="page-next__link" href="#whatiearn"><img src="./assets/icons/arrow-down.svg"  class="page-next__img page-next__img--color" alt="seta para baixo"></a>
+        </div>
+      </section>
+
+      <section class="whatiearn section-color-2" id="whatiearn">
         <div class="container">
           <h2 class="title">O que ganho compartilhando meu Wifi?</h2>
           <p class="desc">
@@ -121,13 +172,16 @@
             recompensas disponibilizadas pelos nossos Parceiros.
           </p>
         </div>
+        <div class="page-next section-color-1">
+          <a class="page-next__link" href="#rewards"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
+        </div>
       </section>
-      
-      <section class="rewards">
+
+      <section class="rewards section-color-1" id="rewards">
         <div class="container">
           <div class="elements">
             <h2 class="title">Recompensas exclusivas</h2>
-            <p class="desc">Acumule pontos e troque por recompensas preparadas especialmente pelos nossos parceiros.</p>
+            <p class="desc desc--color">Acumule pontos e troque por recompensas preparadas especialmente pelos nossos parceiros.</p>
           </div>
           <div class="rewards__container">
             <div class="reward__card" title="Plano anual do curso Ignite Rocketseat">
@@ -182,29 +236,12 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="security">
-        <div class="container">
-          <h2 class="title">Mas é seguro eu compartilhar minha rede wifi?</h2>
-          <p class="desc">
-            Não! Você pode ter sérios problemas se deixar sua rede wifi sem uma
-            boa senha.
-          </p>
-          <p class="desc">
-            Foi pensando nisso que nossa comunidade desenvolveu um software focado
-            na segurança dos nosso calaboradores.
-          </p>
-          <p class="desc">O aluno não terá acesso ao nome da sua rede ou senha.</p>
-          <p class="desc">
-            Nosso aplicativo identifica as redes dos colaboradores ao redor do
-            endereço do aluno. Gerando um token de acesso exclusivo e individual
-            para aquelas redes.
-          </p>
+        <div class="page-next section-color-2">
+          <a class="page-next__link" href="#schools"><img src="./assets/icons/arrow-down.svg"  class="page-next__img page-next__img--color alt="seta para baixo"></a>
         </div>
       </section>
 
-      <section class="schools">
+      <section class="schools section-color-2" id="schools">
         <div class="container">
           <h2 class="title">
             Sou professor como posso levar o projeto para minha escola?
@@ -217,7 +254,7 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section class="partners section-color-2">
         <div class="container">
           <div class="partners__container">
             <a href="#" class="partner__link">
@@ -261,5 +298,8 @@
       </div>
     </footer>
     <script src="main.js"></script>
+   
   </body>
+
+    
 </html>
