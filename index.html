@@ -24,11 +24,15 @@
             <i class="fas fa-wifi"></i>
             <span><span class="logo__text">&lt;</span>&#47<span class="logo__text">WifiParaTodos</span>!<span class="logo__text">&gt;</span></span>
           </a>
-          <nav class="menu__nav">
-            <a href="#" class="menu__link">O que somos?</a>
-            <a href="#" class="menu__link">Como Funciona?</a>
+          <nav class="menu__nav" id="menu__nav"> 
+            <a href="#aboutus" class="menu__link">O que somos?</a>
+            <a href="#howitworks" class="menu__link">Como Funciona?</a>
             <a href="#" class="menu__link">Faça parte</a>
           </nav>
+          <button class="menu-mobile" id="btn-menu-mobile">
+            <div class="menu-mobile__line "></div>
+            <div class="menu-mobile__line "></div>
+          </button>
         </div>
       </section>
       <section class="intro container" id="intro">
@@ -120,10 +124,10 @@
               </div>
               <div class="card__desc">
                   <ul class="card__list">
-                    <li class="card__list-item">Acredita que o acesso a internet é fundamental.</li>
-                    <li class="card__list-item">Se cadastra no nosso site para compartilhar seu wifi.</li>
-                    <li class="card__list-item">Ganha pontos por cada hora que um aluno utiliza seu wifi.</li>
-                    <li class="card__list-item">Acumula seus pontos e troca por recompensas exclusivas.</li>
+                    <li class="card__list-item">Vizualiza um futuro onde a tecnologia e acesso a informação é indispensável.</li>
+                    <li class="card__list-item">Se cadastra em nosso site a fim de nos ajudar a construir um futuro mais acessivel.</li>
+                    <li class="card__list-item">Contribui com recompensas exclusivas para nossos colaboradores.</li>
+                    
                   </ul>
               </div>
             </div>
@@ -139,10 +143,9 @@
               </div>
               <div class="card__desc card__desc--bg-schools">
                   <ul class="card__list">
-                    <li class="card__list-item">Acredita que o acesso a internet é fundamental.</li>
-                    <li class="card__list-item">Se cadastra no nosso site para compartilhar seu wifi.</li>
-                    <li class="card__list-item">Ganha pontos por cada hora que um aluno utiliza seu wifi.</li>
-                    <li class="card__list-item">Acumula seus pontos e troca por recompensas exclusivas.</li>
+                    <li class="card__list-item">Quer um futuro com mais inclusão e acesso para seus alunos.</li>
+                    <li class="card__list-item">Se cadastra no nosso site.</li>
+                    <li class="card__list-item">Faz o cadastro dos alunos em nosso site e disponibiliza o aplicativo com instalação online ou offline (em um pendrive).</li>
                   </ul>
               </div>
             </div>
@@ -155,22 +158,27 @@
       </section>
 
       <section class="whatiearn section-color-2" id="whatiearn">
-        <div class="container">
-          <h2 class="title">O que ganho compartilhando meu Wifi?</h2>
-          <p class="desc">
-            Compartilhando sua internet com os alunos, você estará ajudando a
-            construir um futuro com mais educação e mais acesso a informação.
-          </p >
-          <p class="desc">
-            Mas entendemos que precisamos incentivar ainda mais pessoas a
-            participarem.
-          </p>
-          <p class="desc">
-            Graças aos nossos parceiros, desenvolvemos um sistema de recompensas
-            onde cada colaborador ganhará pontos para cada hora que um aluno
-            utiliza seu wifi. Podendo assim acumular pontos e trocar pelas
-            recompensas disponibilizadas pelos nossos Parceiros.
-          </p>
+        <div class="container container--flex-row">
+          <div class="container__text">
+            <h2 class="title">O que ganho compartilhando meu Wifi?</h2>
+            <p class="desc">
+              Compartilhando sua internet com os alunos, você estará ajudando a
+              construir um futuro com mais educação e mais acesso a informação.
+            </p >
+            <p class="desc">
+              Mas entendemos que precisamos incentivar ainda mais as pessoas a
+              participarem.
+            </p>
+            <p class="desc">
+              Com a ajuda dos nossos parceiros, desenvolveremos um sistema de recompensas
+              onde cada colaborador ganhará pontos para cada hora que um aluno
+              utilizar seu wifi. Podendo assim acumular pontos e trocar por recompensas exclusivas.
+              .
+            </p>
+          </div>
+          <div class="container__art">
+            <img src="./assets/imgs/vouchers.png" alt="" class="container__img">
+          </div>
         </div>
         <div class="page-next section-color-1">
           <a class="page-next__link" href="#rewards"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
@@ -242,15 +250,20 @@
       </section>
 
       <section class="schools section-color-2" id="schools">
-        <div class="container">
-          <h2 class="title">
-            Sou professor como posso levar o projeto para minha escola?
-          </h2>
-          <p class="desc">
-            Você poderá cadastrar sua escola. Nossa equipe
-            entrará em contato direto. Assim disponibilizando o acesso ao cadastro
-            dos alunos.
-          </p>
+        <div class="container container--flex-row">
+          <div class="container__text">
+            <h2 class="title">
+              Sou professor como posso levar o projeto para minha escola?
+            </h2>
+            <p class="desc">
+              Você poderá cadastrar sua escola. Nossa equipe
+              entrará em contato direto. Assim disponibilizando o acesso ao cadastro
+              dos alunos.
+            </p>
+          </div>
+          <div class="container__art">
+            <img src="./assets/imgs/teacher-and-kids.png" alt="" class="container__img">
+          </div>
         </div>
       </section>
 
@@ -272,9 +285,7 @@
           </div>
         </div>
       </section>
-
     </main>
-    <div class="div-line"></div>
     <footer class="footer"> 
       <div class="container container--flex-row">
         <section class="contactus">
