@@ -334,13 +334,15 @@
   top: 60%;
 }
 .menu-mobile__line.active:nth-child(1) {
-  top: 50%;
+  top: 45%;
+  right: 10%;
   width: 80%;
   transform: rotate(315deg);
 }
 .menu-mobile__line.active:nth-child(2) {
   /* background-color: red; */
-  top: 50%;
+  top: 45%;
+  right: 10%;
   width: 80%;
   transform: rotate(45deg);
 }
