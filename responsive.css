@@ -24,6 +24,7 @@
     background-color: white;
     gap: 0;
     display: none;
+    border-top: 0.1rem solid var(--bg-color-3)
   }
   
   .menu__nav.active{
@@ -36,8 +37,7 @@
     text-align: center;
     padding: 2rem;
     color: var(--font-color-1);
-    border-bottom: 0.1rem solid var(--bg-color-3)
-    /* background-color: red; */
+    border-bottom: 0.1rem solid var(--bg-color-3);
   }
 
   .intro__elements {
