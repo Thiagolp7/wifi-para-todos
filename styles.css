@@ -315,6 +315,10 @@
   display: none;
 }
 
+.menu-mobile:focus{
+  border: none;
+}
+
 .menu-mobile__line {
   width: 100%;
   height: 0.3rem;
