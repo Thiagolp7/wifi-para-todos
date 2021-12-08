@@ -14,6 +14,10 @@
     justify-content: center;
   }
 
+  .intro__elements {
+    margin: 9rem auto;
+  }
+
   .menu__nav {
     position: absolute;
     flex-direction: column;
@@ -24,15 +28,15 @@
     background-color: white;
     gap: 0;
     display: none;
-    border-top: 0.1rem solid var(--bg-color-3)
+    border-top: 0.1rem solid var(--bg-color-3);
   }
-  
-  .menu__nav.active{
+
+  .menu__nav.active {
     display: flex;
   }
-  
-  .menu__link{
-    transition: .5s ease-in;
+
+  .menu__link {
+    transition: 0.5s ease-in;
     width: 100%;
     text-align: center;
     padding: 2rem;
@@ -40,16 +44,11 @@
     border-bottom: 0.1rem solid var(--bg-color-3);
   }
 
-  .intro__elements {
-    margin: 10rem auto;
-  }
-
   .menu-mobile {
     display: initial;
   }
 
   /* Cards */
-
   .card__art {
     position: absolute;
     width: 10rem;
@@ -76,8 +75,87 @@
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 530px) {
   .logo {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
+  }
+
+  .intro {
+    align-items: center;
+  }
+
+  .intro__elements {
+    margin: 9rem auto;
+    gap: 3.5rem;
+    align-items: center;
+  }
+  
+  .intro__title{
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .intro__desc{
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .intro__link{
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+
+  }
+
+  .form__container {
+    flex-direction: row;
+    max-height: 45rem;
+  }
+
+  .form__tabs-row {
+    width: 4rem;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .tab {
+    width: 4rem;
+    height: calc(100% / 3);
+    border-bottom: none;
+    border-right: 0.3rem solid var(--card-partners-color);
+  }
+
+  .tab.active {
+    border-right: none;
+  }
+
+  .tab h2 {
+    transform: rotate(270deg);
+  }
+  .tab--first {
+    border-radius: 2rem 0 0 0;
+    border-color: var(--card-collaborator-color);
+  }
+
+  .tab--last {
+    border-radius: 0 0 0 2rem;
+    border-color: var(--card-schools-color);
+  }
+
+  .tab--colaborators-color.active {
+    border-top: none;
+    border-left: 0.3rem solid var(--card-collaborator-color);
+  }
+  .tab--partners-color.active {
+    border-top: none;
+    border-left: 0.3rem solid var(--card-partners-color);
+  }
+  .tab--schools-color.active {
+    border-top: none;
+    border-left: 0.3rem solid var(--card-schools-color);
+  }
+
+  .form {
+    width: 80%;
   }
 }

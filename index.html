@@ -22,12 +22,17 @@
         <div class="container container--menu container--flex-row ">
           <a href="#" class="logo">
             <i class="fas fa-wifi"></i>
-            <span><span class="logo__text">&lt;</span>&#47<span class="logo__text">WifiParaTodos</span>!<span class="logo__text">&gt;</span></span>
+            <span>
+              <span class="logo__text">&lt;</span>
+              &#47
+              <span class="logo__text">WifiParaTodos</span>
+              !<span class="logo__text">&gt;</span>
+            </span>
           </a>
           <nav class="menu__nav" id="menu__nav"> 
             <a href="#aboutus" class="menu__link">O que somos?</a>
             <a href="#howitworks" class="menu__link">Como Funciona?</a>
-            <a href="#" class="menu__link">Faça parte</a>
+            <a href="#joinus" class="menu__link">Faça parte</a>
           </nav>
           <button class="menu-mobile" id="btn-menu-mobile">
             <div class="menu-mobile__line "></div>
@@ -61,10 +66,7 @@
       <section class="aboutus  section-color-2" id="aboutus">
         <div class="container container--flex-row">
           <div class="container__text">
-            <div class="title">
               <h2 class="title">O que somos?</h2>
-            </div>
-            <div>
               <p class="desc"> 
                 Somos uma comunidade focada em contribuir com a democratização ao
                 acesso a internet. Ajudando assim a construir um futuro com mais
@@ -73,7 +75,6 @@
               <p class="desc">
                 Desenvolveremos um aplicativo, onde os alunos poderam encontrar e se conectar a pontos de wifis públicos, além das redes dos colaboradores que se encontram perto de sua residência.  
               </p>
-            </div>
           </div>
           <div class="container__art">
             <img src="./assets/imgs/kids-1.png" alt="localização arte" class="container__img">
@@ -127,7 +128,6 @@
                     <li class="card__list-item">Vizualiza um futuro onde a tecnologia e acesso a informação é indispensável.</li>
                     <li class="card__list-item">Se cadastra em nosso site a fim de nos ajudar a construir um futuro mais acessivel.</li>
                     <li class="card__list-item">Contribui com recompensas exclusivas para nossos colaboradores.</li>
-                    
                   </ul>
               </div>
             </div>
@@ -265,6 +265,105 @@
             <img src="./assets/imgs/teacher-and-kids.png" alt="" class="container__img">
           </div>
         </div>
+        <div class="page-next section-color-1">
+          <a class="page-next__link" href="#joinus"><img src="./assets/icons/arrow-down.svg"  class="page-next__img alt="seta para baixo"></a>
+        </div>
+      </section>
+
+      <section class="joinus section-color-1" id="joinus">
+        <div class="container">
+          <div class="container__text">
+            <h2 class="title">Faça Parte!</h2>
+            <p class="desc desc--color">Você pode ajudar a construir um futuro com mais acesso!</p>
+          </div>
+          <div class="joinus__container">
+            <div class="form__container">
+              <div class="form__tabs-row">
+                <div class="tab tab--first tab--colaborators-color active" id="tab-collaborators"
+                 title="Seja um colaborador">
+                  <h2>Colaboradores</h2> 
+                </div>
+                <div class="tab tab--partners-color" id="tab-partners" title="Seja um parceiro">
+                  <h2>Parceiros</h2> 
+                </div>
+                <div class="tab tab--last tab--schools-color" id="tab-schools" title="Leve para sua escola">
+                  <h2>Escolas</h2> 
+                </div>
+              </div>
+              <div class="form__content active" id="form-collaborators">
+                <form action="#joinus" class="form" method="post" >
+                  <div class="form__line">
+                    <label for="name" class="form__label form__label--collaborators-color">
+                      Nome completo
+                    </label>
+                    <input type="text" class="form__input form__input--collaborators-color" id="name" required>
+                  </div>
+                  <div class="form__line" >
+                    <label for="email" class="form__label form__label--collaborators-color">Email</label>
+                    <input type="email" id="email" class="form__input form__input--collaborators-color" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                  </div>
+                  <div class="form__line">
+                    <label for="password" class="form__label form__label--collaborators-color">Senha</label>
+                    <input type="password" id="password" class="form__input form__input--collaborators-color" min="6" required>
+                  </div>
+                  <div class="form__line">
+                    <label for="address" class="form__label form__label--collaborators-color">Endereço</label>
+                    <input type="text" id="address" class="form__input form__input--collaborators-color" required>
+                  </div>
+                  <button class="form__button form__button--collaborators-color">Enviar</button>
+                </form>
+              </div>
+              <div class="form__content" id="form-partners">
+                <form action="#joinus" class="form" method="post" >
+                  <div class="form__line">
+                    <label for="name" class="form__label">
+                      Nome da empresa
+                    </label>
+                    <input type="text" class="form__input" id="name" required>
+                  </div>
+                  <div class="form__line" >
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" id="email" class="form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                  </div>
+                  <div class="form__line">
+                    <label for="address" class="form__label">Endereço</label>
+                    <input type="text" id="address" class="form__input" required>
+                  </div>
+                  <button class="form__button">Enviar</button>
+                </form>
+              </div>
+              <div class="form__content" id="form-schools">
+                <form action="#joinus" class="form" method="post" >
+                  <div class="form__line">
+                    <label for="name" class="form__label form__label--schools-color">
+                      Seu nome completo
+                    </label>
+                    <input type="text" class="form__input form__input--schools-color" id="name" required>
+                  </div>
+                  <div class="form__line">
+                    <label for="name" class="form__label form__label--schools-color">
+                      Nome da escola
+                    </label>
+                    <input type="text" class="form__input form__input--schools-color" id="name" required>
+                  </div>
+                  <div class="form__line" >
+                    <label for="email" class="form__label form__label--schools-color">Email</label>
+                    <input type="email" id="email" class="form__input form__input--schools-color" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                  </div>
+                  <div class="form__line">
+                    <label for="address" class="form__label form__label--schools-color">Telefone</label>
+                    <input type="tel" id="address" class="form__input form__input--schools-color" pattern="[0-9]{2} [0-9]{4,5}\-?[0-9]{4}" maxlength="12"  required>
+                  </div>
+                  <div class="form__line">
+                    <label for="address" class="form__label form__label--schools-color">Endereço</label>
+                    <input type="text" id="address" class="form__input form__input--schools-color" required>
+                  </div>
+                  <button class="form__button form__button--schools-color">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="partners section-color-2">
@@ -290,7 +389,7 @@
       <div class="container container--flex-row">
         <section class="contactus">
           <ul class="contactus__list" >
-            <li class="contactus__title"><h2 class="title">Fale conosco!</h2></li>
+            <li class="contactus__title"><h2 >Fale conosco!</h2></li>
             <li class="contactus__item"><img class="contactus__item-img"src="./assets/icons/phone.svg" alt="telefone">(021) 555-0103</li>
             <li class="contactus__item"><img class="contactus__item-img"src="./assets/icons/location.svg" alt="localização">
               Rua Araruama, 2156 - Rio de janeiro.</li>

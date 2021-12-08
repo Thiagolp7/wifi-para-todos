@@ -11,10 +11,9 @@ const btnMenuMobile = document.querySelector('#btn-menu-mobile')
 const btnMenuLines = document.querySelectorAll('.menu-mobile__line')
 const menuNav = document.querySelector('#menu__nav')
 
-
-function changeMenuBarBgcolor(){
+function changeMenuBarBgcolor() {
   const pagePosition = window.scrollY
-  const menuBarBgOn = pagePosition > headerIntroPosition - 25
+  const menuBarBgOn = pagePosition > headerIntroPosition 
 
   if (menuBarBgOn) {
     menuBar.classList.add('bg-active')
@@ -51,7 +50,7 @@ function changeMenuBarBgcolor(){
   }
 }
 
-function menuMobileOnOff(){
+function menuMobileOnOff() {
   btnMenuLines.forEach(lines => {
     lines.classList.toggle('active')
   })
@@ -70,10 +69,9 @@ function menuMobileOnOff(){
   }
 }
 
-
 window.addEventListener('load', () => {
   document.addEventListener('scroll', changeMenuBarBgcolor)
-  
+
   btnMenuMobile.addEventListener('click', menuMobileOnOff)
 
   menuLinks.forEach(link => {
@@ -82,4 +80,27 @@ window.addEventListener('load', () => {
 })
 
 
+// form-container
 
+const formTabs = document.querySelectorAll('.tab')
+const formContents = document.querySelectorAll('.form__content')
+
+formTabs.forEach(tab => {
+  tab.addEventListener('click', event => {
+    formTabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+
+    tab.classList.add('active')
+
+    formContents.forEach(content =>{
+      content.classList.remove('active')
+
+      const contentId = content.id.replace('form-', '')
+      const tabID = tab.id.replace('tab-', '')
+      if(contentId === tabID ){
+        content.classList.add('active')
+      }
+    })
+  })
+})

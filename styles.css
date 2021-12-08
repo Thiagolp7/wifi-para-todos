@@ -63,6 +63,7 @@
 .rewards,
 .security,
 .schools,
+.joinus,
 .partners,
 .footer {
   width: 100%;
@@ -73,6 +74,12 @@
   /* padding: 3rem 3rem; */
   gap: 5rem;
   position: relative;
+  padding: 9.5rem 3rem 12rem;
+}
+
+.joinus{
+  min-height: 70vh;
+  padding-bottom: 5.5rem;
 }
 
 .partners,
@@ -80,6 +87,7 @@
   min-height: auto;
   height: auto;
   position: initial;
+  padding: 3rem;
 }
 
 .container {
@@ -89,9 +97,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 9.5rem 3rem 12rem;
   gap: 3rem;
-  padding: 0 3rem;
 }
 
 .container--flex-row {
@@ -101,6 +107,11 @@
 
 .container--menu {
   margin: 0;
+  padding: 0 3rem;
+}
+
+.container--margin{
+  margin: 3rem 0;
 }
 
 .container__text {
@@ -108,7 +119,6 @@
   min-width: 25rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
 }
 
 .container__art {
@@ -123,7 +133,7 @@
 .title {
   font-size: 3rem;
   line-height: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -133,8 +143,6 @@
   margin-bottom: 4rem;
   color: var(--desc-color-1);
   text-align: center;
-  /* text-indent: 5rem; */
-  /* word-spacing: 10px; */
 }
 
 .desc--color {
@@ -184,6 +192,7 @@
 .section-color-1 {
   background-color: var(--bg-color-1);
 }
+
 .section-color-2 {
   background-color: var(--bg-color-2);
 }
@@ -260,7 +269,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
 }
 
 .menu__nav {
@@ -355,7 +363,7 @@
   gap: 1rem;
   position: relative;
   z-index: 1;
-  border-radius: 2rem;
+  padding: 0 3rem;
 }
 
 .intro__elements {
@@ -404,7 +412,6 @@
 }
 
 /* === #Howitworks === */
-
 .cards__container {
   display: flex;
   justify-content: center;
@@ -521,8 +528,6 @@
   background-color: var(--card-schools-color);
 }
 
-/* === #Whatiearn === */
-
 /* === #Rewards === */
 .rewards__container {
   max-width: 100rem;
@@ -622,8 +627,6 @@
   color: var(--reward-card-font-color);
 }
 
-/* === #Schools === */
-
 /* === #Partners === */
 
 .partners__title {
@@ -646,12 +649,174 @@
   -moz-filter: var(--partner-img-color);
 }
 
+/* === #joinus */
+
+.joinus__container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__container{
+  width: 50rem;
+  max-width: 50rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-1);
+  box-shadow: .3rem .3rem .5rem var(--shadow);
+  border-radius: 2rem;
+  /* overflow: hidden; */
+}
+
+.form__tabs-row{
+  width: 100%;
+  display: flex;
+}
+
+.tab{
+  width: calc(100%/3);
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(180, 180, 180);
+  background-color: rgb(235, 235, 235);
+  border-bottom: .3rem solid var(--card-partners-color);
+
+  cursor: pointer;
+  transition: .1s ease;
+}
+
+.tab.active{
+  background-color: var(--bg-color-1);
+  border-bottom: none;
+}
+
+/* form tab modifcators */
+.tab--first{
+  border-radius: 2rem 0 0 0;
+  border-color: var(--card-collaborator-color);
+}
+.tab--last{
+  border-radius: 0 2rem 0 0;
+  border-color: var(--card-schools-color);
+}
+
+.tab--colaborators-color.active{
+  color: var(--card-collaborator-color);
+  border-top: .3rem solid var(--card-collaborator-color);
+}
+.tab--partners-color.active{
+  color: var(--card-partners-color);
+  border-top: .3rem solid var(--card-partners-color);
+}
+.tab--schools-color.active{
+  color: var(--card-schools-color);
+  border-top: .3rem solid var(--card-schools-color);
+}
+
+.form__content{
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__content.active{
+  display: flex;
+}
+
+.form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form__line{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.form__label{
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: var(--weight-medium);
+  color: var(--card-partners-color);
+}
+
+.form__label--collaborators-color{
+  color: var(--card-collaborator-color);
+}
+
+.form__label--schools-color{
+  color: var(--card-schools-color);
+}
+
+.form__input{
+  /* height: 2rem; */
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  border: .1rem solid var(--card-partners-color);
+  color: var(--font-color-1);
+  border-radius: .5rem;
+}
+
+.form__input:focus{
+  outline: .1rem solid var(--card-partners-color) ;
+}
+
+.form__input--collaborators-color{
+  border: .1rem solid var(--card-collaborator-color);
+}
+.form__input--collaborators-color:focus {
+  outline: .1rem solid var(--card-collaborator-color) ;
+}
+
+.form__input--schools-color{
+  border: .1rem solid var(--card-schools-color);
+}
+.form__input--schools-color:focus{
+  outline: .1rem solid var(--card-schools-color);
+}
+
+.form__button{
+  background-color: var(--card-partners-color);
+  padding: .5rem 1rem;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.form__button--collaborators-color{
+  background-color: var(--card-collaborator-color);
+}
+
+.form__button--schools-color{
+  background-color: var(--card-schools-color);
+}
+
+
 /* ==================
 #Footer
 ================== */
 .footer {
   background-color: var(--bg-color-3);
   border-top: 0.2rem solid var(--bg-color-1);
+}
+
+.contactus__title{
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .contactus__list {
