@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./all.css">
-    <link rel="stylesheet" href="./responsive.css">
+    <!-- Styles sheets -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- Fav icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <!-- Scripts -->
+    <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/all.js"></script>
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="./scripts/scrollreveal.js"></script>
 
-    <script defer src="./all.js"></script>
     <title>Wifi para todos!</title>
   </head>
   <body>
@@ -42,20 +52,20 @@
       </section>
       <section class="intro container" id="intro">
         <div class="intro__elements">
-          <h1 class="intro__title">
+          <h1 class="intro__title reveal-100">
             O futuro é educação.<br />
             Educação é tecnologia.<br />
             Tecnologia é o futuro.
           </h1>
-          <div class="intro__desc">
+          <div class="intro__desc reveal-200">
             <p>
               Com a pandemia, milhões de alunos ficaram sem aula.<br>
               A tecnologia permitiu aos professores darem  aulas online.<br><br>
-  
-              Mas como utilizar a tecnologia na educação,<br> se milhares de alunos ainda não tem acesso a internet?
+              Mas como utilizar a tecnologia na educação,<br> 
+              se milhares de alunos ainda não tem acesso a internet?
             </p>
           </div>
-          <a href="#aboutus" class="intro__link">Você pode ajudar!</a>
+          <a href="#aboutus" class="intro__link reveal-300">Você pode ajudar!</a>
         </div>
       </section>
       <div class="page-next section-color-2">
@@ -66,45 +76,42 @@
       <section class="aboutus  section-color-2" id="aboutus">
         <div class="container container--flex-row">
           <div class="container__text">
-              <h2 class="title">O que somos?</h2>
-              <p class="desc"> 
+              <h2 class="title reveal-100">O que somos?</h2>
+              <p class="desc reveal-200"> 
                 Somos uma comunidade focada em contribuir com a democratização ao
                 acesso a internet. Ajudando assim a construir um futuro com mais
                 educação onde todos fazem parte.
               </p>
-              <p class="desc">
+              <p class="desc reveal-200">
                 Desenvolveremos um aplicativo, onde os alunos poderam encontrar e se conectar a pontos de wifis públicos, além das redes dos colaboradores que se encontram perto de sua residência.  
               </p>
           </div>
-          <div class="container__art">
-            <img src="./assets/imgs/kids-1.png" alt="localização arte" class="container__img">
+          <div class="container__art reveal-600">
+            <img src="./assets/imgs/kids-1.png" alt="arte mão segurando celular" class="container__img">
           </div>
         </div>
         <div class="page-next section-color-1">
           <a class="page-next__link" href="#howitworks"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
         </div>
       </section>
-
       <section class="howitworks section-color-1" id="howitworks">
         <div class="container">
           <div class="container__text">
-            <h2 class="title">Como Funciona?</h2>
-            <p class="desc desc--color">Nossa comunidade gira em torno de 3 grupos fundamentais.</p>
-
+            <h2 class="title reveal-100">Como Funciona?</h2>
+            <p class="desc desc--color reveal-200">Nossa comunidade gira em torno de 3 grupos fundamentais.</p>
           </div>
-          
           <div class="cards__container">
-            <div class="card">
+            <div class="card reveal-100">
               <div class="card__title">
-                <div class="card__title-number card__title-number--border-collaborator">
-                  <h2 class="card__title-text card__title-text--collaborator">1</h2>
+                <div class="card__title-number card__title-number--border-collaborators">
+                  <h2 class="card__title-text card__title-text--collaborators">1</h2>
                 </div>
-                <h2 class="card__title-text card__title-text--collaborator">Colaboradores</h2>
+                <h2 class="card__title-text card__title-text--collaborators">Colaboradores</h2>
               </div>
-              <div class="card__art card__art--border-colaborator">
-                <img src="./assets/imgs/colaborador.svg" class="card__art-img" alt="">
+              <div class="card__art card__art--border-collaborators">
+                <img src="./assets/imgs/colaborador.svg" class="card__art-img" alt="arte homem no computador">
               </div>
-              <div class="card__desc card__desc--bg-collaborator">
+              <div class="card__desc card__desc--bg-collaborators">
                   <ul class="card__list">
                     <li class="card__list-item">Acredita que o acesso a internet é fundamental.</li>
                     <li class="card__list-item">Se cadastra no nosso site para compartilhar seu wifi.</li>
@@ -113,7 +120,7 @@
                   </ul>
               </div>
             </div>
-            <div class="card">
+            <div class="card reveal-200">
               <div class="card__title">
                 <div class="card__title-number">
                   <h2 class="card__title-text">2</h2>
@@ -121,7 +128,7 @@
                 <h2 class="card__title-text">Parceiros</h2>
               </div>
               <div class="card__art">
-                <img src="./assets/imgs/partners.svg" class="card__art-img" alt="">
+                <img src="./assets/imgs/partners.svg" class="card__art-img" alt="arte moça sendo ajudada no trabalho">
               </div>
               <div class="card__desc">
                   <ul class="card__list">
@@ -131,7 +138,7 @@
                   </ul>
               </div>
             </div>
-            <div class="card">
+            <div class="card reveal-300">
               <div class="card__title">
                 <div class="card__title-number card__title-number--border-schools">
                   <h2 class="card__title-text card__title-text--schools">3</h2>
@@ -139,13 +146,13 @@
                 <h2 class="card__title-text card__title-text--schools">Escolas</h2>
               </div>
               <div class="card__art card__art--border-schools">
-                <img src="./assets/imgs/schools.svg" class="card__art-img" alt="">
+                <img src="./assets/imgs/schools.svg" class="card__art-img" alt="arte professor dando aula para os alunos">
               </div>
               <div class="card__desc card__desc--bg-schools">
                   <ul class="card__list">
                     <li class="card__list-item">Quer um futuro com mais inclusão e acesso para seus alunos.</li>
                     <li class="card__list-item">Se cadastra no nosso site.</li>
-                    <li class="card__list-item">Faz o cadastro dos alunos em nosso site e disponibiliza o aplicativo com instalação online ou offline (em um pendrive).</li>
+                    <li class="card__list-item">Faz o cadastro dos alunos e disponibiliza o aplicativo com instalação online ou offline (em um pendrive).</li>
                   </ul>
               </div>
             </div>
@@ -156,77 +163,75 @@
           <a class="page-next__link" href="#whatiearn"><img src="./assets/icons/arrow-down.svg"  class="page-next__img page-next__img--color" alt="seta para baixo"></a>
         </div>
       </section>
-
       <section class="whatiearn section-color-2" id="whatiearn">
         <div class="container container--flex-row">
           <div class="container__text">
-            <h2 class="title">O que ganho compartilhando meu Wifi?</h2>
-            <p class="desc">
+            <h2 class="title reveal-100">O que ganho compartilhando meu Wifi?</h2>
+            <p class="desc reveal-200">
               Compartilhando sua internet com os alunos, você estará ajudando a
               construir um futuro com mais educação e mais acesso a informação.
             </p >
-            <p class="desc">
+            <p class="desc reveal-200">
               Mas entendemos que precisamos incentivar ainda mais as pessoas a
               participarem.
             </p>
-            <p class="desc">
+            <p class="desc reveal-200">
               Com a ajuda dos nossos parceiros, desenvolveremos um sistema de recompensas
               onde cada colaborador ganhará pontos para cada hora que um aluno
               utilizar seu wifi. Podendo assim acumular pontos e trocar por recompensas exclusivas.
               .
             </p>
           </div>
-          <div class="container__art">
-            <img src="./assets/imgs/vouchers.png" alt="" class="container__img">
+          <div class="container__art reveal-600">
+            <img src="./assets/imgs/vouchers.png" alt="duas pessoas sorrindo usando um tablet" class="container__img">
           </div>
         </div>
         <div class="page-next section-color-1">
           <a class="page-next__link" href="#rewards"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
         </div>
       </section>
-
       <section class="rewards section-color-1" id="rewards">
         <div class="container">
           <div class="elements">
-            <h2 class="title">Recompensas exclusivas</h2>
-            <p class="desc desc--color">Acumule pontos e troque por recompensas preparadas especialmente pelos nossos parceiros.</p>
+            <h2 class="title reveal-100">Recompensas exclusivas</h2>
+            <p class="desc desc--color reveal-200">Acumule pontos e troque por recompensas preparadas especialmente pelos nossos parceiros.</p>
           </div>
           <div class="rewards__container">
-            <div class="reward__card" title="Plano anual do curso Ignite Rocketseat">
+            <div class="reward__card reveal-300" title="Plano anual do curso Ignite Rocketseat">
               <h3 class="reward__hot reward__float reward__float--right">HOT</h3>
-              <img class="reward__float img-white" src="./assets/rocketseat.svg" alt="Logo Rocketseat" >
+              <img class="reward__float img-white" src="./assets/partners-logo/rocketseat.svg" alt="Logo Rocketseat" >
               <img src="./assets/rewards/rocketseat-ignite.jpg" alt="Codificando na rockeseat" class="reward__img">
               <div class="reward__desc">
                 <h2 class="reward__price">Plano Anual Ignite</h2>
                 <h3 class="reward__price">8500 pts</h3>
               </div>
             </div>
-            <div class="reward__card" title="Cupom do Ifood no valor de R$50">
+            <div class="reward__card reveal-300" title="Cupom do Ifood no valor de R$50">
               <h3 class="reward__new reward__float reward__float--right">NEW</h3>
-              <img class="reward__float img-white" src="./assets/ifood.webp" alt="Logo ifood" >
-              <img src="./assets/rewards/hamburguer.jpg" alt="Hamburguer" class="reward__img">
+              <img class="reward__float img-white" src="./assets/partners-logo/ifood.webp" alt="Logo ifood" >
+              <img src="./assets/rewards/hamburguer.jpg" alt="imagem de um hamburguer" class="reward__img">
               <div class="reward__desc">
                 <h2 class="reward__price">Cupom R$50</h2>
                 <h3 class="reward__price">1000 pts</h3>
               </div>
             </div>
-            <div class="reward__card" title="Um mês grátis para assistir qualquer série na globoplay">
-              <img class="reward__float img-white" src="./assets/globo.webp"alt="Logo globo">
+            <div class="reward__card reveal-300" title="Um mês grátis para assistir qualquer série na globoplay">
+              <img class="reward__float img-white" src="./assets/partners-logo/globo.webp"alt="Logo globo">
               <img src="./assets/rewards/assitindo-globoplay-2.jpg" alt="família assitindo globoplay" class="reward__img">
               <div class="reward__desc">
                 <h2 class="reward__price">Um mês de globoplay</h2>
                 <h3 class="reward__price">1000 pts</h3>
               </div>
             </div>
-            <div class="reward__card" title="Plano Premium Anual na Gamers club">
-              <img class="reward__float img-white" src="./assets/gamers-club.webp" alt="Jogando counterstrike na gamersclub" title="Plano ">
-              <img src="./assets/rewards/cs-gamersclub.jpg" alt="" class="reward__img">
+            <div class="reward__card reveal-300" title="Plano Premium Anual na Gamers club">
+              <img class="reward__float img-white" src="./assets/partners-logo/gamers-club.webp" alt="Logo gamersclub" title="Plano ">
+              <img src="./assets/rewards/cs-gamersclub.jpg" alt="moça jogando no computador" class="reward__img">
               <div class="reward__desc">
                 <h2 class="reward__price">Premium Anual</h2>
                 <h3 class="reward__price">8500 pts</h3>
               </div>
             </div>
-            <div class="reward__card" title="Camisa exclusiva WifiParaTodos">
+            <div class="reward__card reveal-300" title="Camisa exclusiva WifiParaTodos">
               <h3 class="reward__soon reward__float reward__float--right">em breve</h3>
               <img src="./assets/rewards/Camiseta-wifiparatodos.png" alt="camiseta wifi para todos" class="reward__img">
               <div class="reward__desc">
@@ -234,7 +239,7 @@
                 <h3 class="reward__price">12000 pts</h3>
               </div>
             </div>
-            <div class="reward__card" title="Caneca exclusiva WifiParaTodos">
+            <div class="reward__card reveal-300" title="Caneca exclusiva WifiParaTodos">
               <h3 class="reward__soon reward__float reward__float--right">em breve</h3>
               <img src="./assets/rewards/caneca-wifiparatodos.jpg" alt="Caneca wifi para todos" class="reward__img">
               <div class="reward__desc">
@@ -248,38 +253,36 @@
           <a class="page-next__link" href="#schools"><img src="./assets/icons/arrow-down.svg"  class="page-next__img page-next__img--color alt="seta para baixo"></a>
         </div>
       </section>
-
       <section class="schools section-color-2" id="schools">
         <div class="container container--flex-row">
           <div class="container__text">
-            <h2 class="title">
+            <h2 class="title reveal-100">
               Sou professor como posso levar o projeto para minha escola?
             </h2>
-            <p class="desc">
+            <p class="desc reveal-200">
               Você poderá cadastrar sua escola. Nossa equipe
               entrará em contato direto. Assim disponibilizando o acesso ao cadastro
               dos alunos.
             </p>
           </div>
-          <div class="container__art">
+          <div class="container__art reveal-600">
             <img src="./assets/imgs/teacher-and-kids.png" alt="" class="container__img">
           </div>
         </div>
         <div class="page-next section-color-1">
-          <a class="page-next__link" href="#joinus"><img src="./assets/icons/arrow-down.svg"  class="page-next__img alt="seta para baixo"></a>
+          <a class="page-next__link" href="#joinus"><img src="./assets/icons/arrow-down.svg"  class="page-next__img" alt="seta para baixo"></a>
         </div>
       </section>
-
       <section class="joinus section-color-1" id="joinus">
         <div class="container">
           <div class="container__text">
-            <h2 class="title">Faça Parte!</h2>
-            <p class="desc desc--color">Você pode ajudar a construir um futuro com mais acesso!</p>
+            <h2 class="title reveal-100">Faça Parte!</h2>
+            <p class="desc desc--color reveal-200">Você pode ajudar a construir um futuro com mais acesso!</p>
           </div>
-          <div class="joinus__container">
+          <div class="joinus__container reveal-600">
             <div class="form__container">
               <div class="form__tabs-row">
-                <div class="tab tab--first tab--colaborators-color active" id="tab-collaborators"
+                <div class="tab tab--first tab--collaborators-color active" id="tab-collaborators"
                  title="Seja um colaborador">
                   <h2>Colaboradores</h2> 
                 </div>
@@ -365,21 +368,20 @@
           </div>
         </div>
       </section>
-
       <section class="partners section-color-2">
         <div class="container">
           <div class="partners__container">
-            <a href="#" class="partner__link">
-              <img src="./assets/rocketseat.svg" alt="Logo parceiro Rockseat" class="partner__img" title="Rocketseat">
+            <a href="https://www.rocketseat.com.br/" class="partner__link reveal-100" target="_blank">
+              <img src="./assets/partners-logo/rocketseat.svg" alt="Logo parceiro Rockseat" class="partner__img" title="Rocketseat">
             </a>
-            <a href="#" class="partner__link">
-              <img src="./assets/globo.webp" alt="Logo parceiro Globo" class="partner__img" title="Globo">
+            <a href="#" class="partner__link reveal-200" target="_blank">
+              <img src="./assets/partners-logo/globo.webp" alt="Logo parceiro Globo" class="partner__img" title="Globo">
             </a>
-            <a href="#" class="partner__link">
-              <img src="./assets/ifood.webp" alt="logo parceiro Ifood" class="partner__img" title="Ifood">
+            <a href="#" class="partner__link reveal-300" target="_blank">
+              <img src="./assets/partners-logo/ifood.webp" alt="logo parceiro Ifood" class="partner__img" title="Ifood">
             </a>
-            <a href="#" class="partner__link">
-              <img src="./assets/gamers-club.webp" alt="Logo parceiro Gamers-club" class="partner__img" title="Gamers-club">
+            <a href="#" class="partner__link reveal-300" target="_blank">
+              <img src="./assets/partners-logo/gamers-club.webp" alt="Logo parceiro Gamers-club" class="partner__img" title="Gamers-club">
             </a>
           </div>
         </div>
@@ -388,7 +390,7 @@
     <footer class="footer"> 
       <div class="container container--flex-row">
         <section class="contactus">
-          <ul class="contactus__list" >
+          <ul class="contactus__list reveal-100" >
             <li class="contactus__title"><h2 >Fale conosco!</h2></li>
             <li class="contactus__item"><img class="contactus__item-img"src="./assets/icons/phone.svg" alt="telefone">(021) 555-0103</li>
             <li class="contactus__item"><img class="contactus__item-img"src="./assets/icons/location.svg" alt="localização">
@@ -397,19 +399,15 @@
           </ul>
         </section>
         <section class="social-links">
-          <a href="#" class="social-links__link">
+          <a href="#" class="social-links__link reveal-100">
             <img src="./assets/icons/facebook.svg"  alt="Facebook Logo" title="Facebook" />
           </a>
-          <a href="#" class="social-links__link">
+          <a href="#" class="social-links__link reveal-200">
             <img src="./assets/icons/instagram.svg" alt="Instagram Logo" title="Instagram" />
           </a>
-          <a href="#" class="social-links__link"><img src="./assets/icons/twitter.svg" alt="Twitter Logo" title="Twitter" /></a>
+          <a href="#" class="social-links__link reveal-300"><img src="./assets/icons/twitter.svg" alt="Twitter Logo" title="Twitter" /></a>
         </section>
       </div>
     </footer>
-    <script src="main.js"></script>
-   
   </body>
-
-    
 </html>
