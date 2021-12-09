@@ -26,10 +26,10 @@
     width: 100vw;
     bottom: -255%;
     left: 0;
-    background-color: white;
+    background-color: var(--menu-bg-active);
     gap: 0;
     display: none;
-    border-top: 0.1rem solid var(--bg-color-3);
+    border-top: 0.1rem solid var(--menu-bottom-border);
   }
 
   .menu__nav.active {
@@ -42,7 +42,7 @@
     text-align: center;
     padding: 2rem;
     color: var(--font-color-1);
-    border-bottom: 0.1rem solid var(--bg-color-3);
+    border-bottom: 0.1rem solid var(--menu-bottom-border);
   }
 
   .menu-mobile {
@@ -55,7 +55,7 @@
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    border: 0.5rem solid var(--card-partners-color);
+    border: 0.5rem solid var(--partners-color);
     right: 1rem;
     top: 1.4rem;
     z-index: 2;
@@ -63,10 +63,10 @@
   }
 
   .card__art--border-schools {
-    border-color: var(--card-schools-color);
+    border-color: var(--schools-color);
   }
   .card__art--border-collaborators {
-    border-color: var(--card-collaborator-color);
+    border-color: var(--collaborators-color);
   }
 
   .card__art-img {
@@ -124,7 +124,7 @@
     width: 4rem;
     height: calc(100% / 3);
     border-bottom: none;
-    border-right: 0.3rem solid var(--card-partners-color);
+    border-right: 0.3rem solid var(--partners-color);
   }
 
   .tab.active {
@@ -136,25 +136,25 @@
   }
   .tab--first {
     border-radius: 2rem 0 0 0;
-    border-color: var(--card-collaborator-color);
+    border-color: var(--collaborators-color);
   }
 
   .tab--last {
     border-radius: 0 0 0 2rem;
-    border-color: var(--card-schools-color);
+    border-color: var(--schools-color);
   }
 
   .tab--collaborators-color.active {
     border-top: none;
-    border-left: 0.3rem solid var(--card-collaborator-color);
+    border-left: 0.3rem solid var(--collaborator-color);
   }
   .tab--partners-color.active {
     border-top: none;
-    border-left: 0.3rem solid var(--card-partners-color);
+    border-left: 0.3rem solid var(--partners-color);
   }
   .tab--schools-color.active {
     border-top: none;
-    border-left: 0.3rem solid var(--card-schools-color);
+    border-left: 0.3rem solid var(--schools-color);
   }
 
   .form {
