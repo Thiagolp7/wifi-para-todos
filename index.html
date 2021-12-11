@@ -29,7 +29,7 @@
       <div class="header__video-layer"></div>
       <video src="./assets/videos/video-1.mp4" class="header__video" preload="metadata" autoplay loop muted></video>
       <section class="menu" id="menu">
-        <div class="container container--menu container--flex-row ">
+        <div class="container container--menu container--flex-row">
           <a href="#" class="logo">
             <i class="fas fa-wifi"></i>
             <span>
@@ -39,15 +39,21 @@
               !<span class="logo__text">&gt;</span>
             </span>
           </a>
-          <nav class="menu__nav" id="menu__nav"> 
-            <a href="#aboutus" class="menu__link">O que somos?</a>
-            <a href="#howitworks" class="menu__link">Como Funciona?</a>
-            <a href="#joinus" class="menu__link">Faça parte</a>
+          <nav class="menu__nav">
+            <button class="btn-switch-theme" id="switch-theme">
+              <img src="./assets/icons/sun.svg" class="btn-switch-theme__img active" alt="mudar para theme escuro" id="light-theme">
+              <img src="./assets/icons/moon.svg" class="btn-switch-theme__img" alt="mudar para theme escuro" id="dark-theme">
+            </button>
+            <div class="menu__links-container" id="menu__links-container"> 
+              <a href="#aboutus" class="menu__link">O que somos?</a>
+              <a href="#howitworks" class="menu__link">Como Funciona?</a>
+              <a href="#joinus" class="menu__link">Faça parte</a>
+            </div>
+            <button class="menu-mobile" id="btn-menu-mobile">
+              <div class="menu-mobile__line "></div>
+              <div class="menu-mobile__line "></div>
+            </button>
           </nav>
-          <button class="menu-mobile" id="btn-menu-mobile">
-            <div class="menu-mobile__line "></div>
-            <div class="menu-mobile__line "></div>
-          </button>
         </div>
       </section>
       <section class="intro container" id="intro">
@@ -86,7 +92,7 @@
                 Desenvolveremos um aplicativo, onde os alunos poderam encontrar e se conectar a pontos de wifis públicos, além das redes dos colaboradores que se encontram perto de sua residência.  
               </p>
           </div>
-          <div class="container__art reveal-600">
+          <div class="container__art reveal-300">
             <img src="./assets/imgs/kids-1.png" alt="crianças usando o celular" class="container__img">
           </div>
         </div>
@@ -182,7 +188,7 @@
               .
             </p>
           </div>
-          <div class="container__art reveal-600">
+          <div class="container__art reveal-300">
             <img src="./assets/imgs/vouchers.png" alt="duas pessoas sorrindo usando um tablet" class="container__img">
           </div>
         </div>
@@ -265,7 +271,7 @@
               dos alunos.
             </p>
           </div>
-          <div class="container__art reveal-600">
+          <div class="container__art reveal-300">
             <img src="./assets/imgs/teacher-and-kids.png" alt="professora ensinando os alunos" class="container__img">
           </div>
         </div>
@@ -279,7 +285,7 @@
             <h2 class="title title--color reveal-100">Faça Parte!</h2>
             <p class="desc desc--color reveal-200">Você pode ajudar a construir um futuro com mais acesso!</p>
           </div>
-          <div class="joinus__container reveal-600">
+          <div class="joinus__container reveal-300">
             <div class="form__container">
               <div class="form__tabs-row">
                 <div class="tab tab--first tab--collaborators-color active" id="tab-collaborators"

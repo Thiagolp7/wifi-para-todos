@@ -19,12 +19,13 @@
   }
 
   /* === #Menu === */
-  .menu__nav {
+ 
+  .menu__links-container{
     position: absolute;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    bottom: -255%;
+    bottom: -18rem;
     left: 0;
     background-color: var(--menu-bg-active);
     gap: 0;
@@ -32,7 +33,7 @@
     border-top: 0.1rem solid var(--menu-bottom-border);
   }
 
-  .menu__nav.active {
+  .menu__links-container.active {
     display: flex;
   }
 
@@ -41,7 +42,7 @@
     width: 100%;
     text-align: center;
     padding: 2rem;
-    color: var(--font-color-1);
+    color: var(--menu-text-color-2-active);
     border-bottom: 0.1rem solid var(--menu-bottom-border);
   }
 
@@ -78,7 +79,7 @@
 
 @media screen and (max-width: 530px) {
   .logo {
-    font-size: 1.9rem;
+    font-size: 1.85rem;
   }
 
   .intro {

@@ -9,7 +9,8 @@ let menuBarBgColorOn = false
 // menu mobile
 const btnMenuMobile = document.querySelector('#btn-menu-mobile')
 const btnMenuLines = document.querySelectorAll('.menu-mobile__line')
-const menuNav = document.querySelector('#menu__nav')
+const menuNav = document.querySelector('#menu__links-container')
+const btnSwitchThemeImg = document.querySelectorAll('.btn-switch-theme__img')
 
 function changeMenuBarBgcolor() {
   const pagePosition = window.scrollY
@@ -20,6 +21,10 @@ function changeMenuBarBgcolor() {
 
     logoTexts.forEach(text => {
       text.classList.add('bg-active')
+    })
+
+    btnSwitchThemeImg.forEach(img =>{
+      img.classList.add('bg-active')
     })
 
     menuLinks.forEach(link => {
@@ -36,6 +41,10 @@ function changeMenuBarBgcolor() {
 
     logoTexts.forEach(text => {
       text.classList.remove('bg-active')
+    })
+
+    btnSwitchThemeImg.forEach(img =>{
+      img.classList.remove('bg-active')
     })
 
     menuLinks.forEach(link => {
@@ -71,12 +80,7 @@ function menuMobileOnOff() {
 
 window.addEventListener('load', () => {
   document.addEventListener('scroll', changeMenuBarBgcolor)
-
   btnMenuMobile.addEventListener('click', menuMobileOnOff)
-
-  menuLinks.forEach(link => {
-    link.addEventListener('click', menuMobileOnOff)
-  })
 })
 
 
@@ -103,4 +107,43 @@ formTabs.forEach(tab => {
       }
     })
   })
+})
+
+
+// close menu-mobile on move scroll
+function MenuMobileClose(){
+  btnMenuLines.forEach(lines => {
+    lines.classList.remove('active')
+  })
+  menuNav.classList.remove('active')
+}
+
+window.addEventListener('scroll', MenuMobileClose)
+
+
+// switch theme button
+const htmlElement = document.querySelector('html')
+const switchBtn = document.querySelector('#switch-theme')
+
+switchBtn.addEventListener('click', click =>{
+  switchBtn.classList.toggle('active')
+  
+  if(switchBtn.classList.contains('active')){
+    htmlElement.setAttribute('data-theme', 'dark')
+    btnSwitchThemeImg.forEach(img => {
+      img.classList.remove('active')
+      if(img.id == 'light-theme'){
+        img.classList.add('active')
+      }
+    })
+  } else {
+    htmlElement.removeAttribute('data-theme')
+    btnSwitchThemeImg.forEach(img => {
+      img.classList.remove('active')
+      
+      if(img.id == 'dark-theme'){
+        img.classList.add('active')
+      }
+    })
+  }
 })
