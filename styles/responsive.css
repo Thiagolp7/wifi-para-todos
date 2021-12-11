@@ -19,8 +19,7 @@
   }
 
   /* === #Menu === */
- 
-  .menu__links-container{
+  .menu__links-container {
     position: absolute;
     flex-direction: column;
     align-items: center;
@@ -78,6 +77,28 @@
 }
 
 @media screen and (max-width: 530px) {
+  .aboutus,
+  .howitworks,
+  .whatiearn,
+  .rewards,
+  .security,
+  .schools,
+  .joinus {
+    padding: 7.9rem 3rem 12rem;
+    gap: 0rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .desc {
+    font-size: 1.6rem;
+    line-height: initial;
+    margin-bottom: 1.5rem;
+  }
+
   .logo {
     font-size: 1.85rem;
   }
@@ -91,44 +112,21 @@
     margin: 9rem auto 11rem;
     gap: 3.5rem;
   }
-  
+
   .intro__title {
     font-size: 3rem;
     line-height: 3.5rem;
   }
 
-  .aboutus,
-  .howitworks,
-  .whatiearn,
-  .rewards,
-  .security,
-  .schools,
-  .joinus{
-    padding: 7.9rem 3rem 12rem;
-    gap: 0rem;
-  }
-
-  .title{
-    font-size: 2rem;
-    line-height: 2.2rem;
-    margin-bottom: 2rem;
-  }
-  .desc{
-    font-size: 1.6rem;
-    line-height: initial;
-    margin-bottom: 1.5rem;
-  }
-
-  .intro__desc{
+  .intro__desc {
     width: 100%;
     font-size: 1.8rem;
     line-height: 2rem;
   }
 
-  .intro__link{
+  .intro__link {
     font-size: 2rem;
     padding: 1.5rem 1rem;
-
   }
 
   /* === #Form === */

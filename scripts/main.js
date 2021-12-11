@@ -132,7 +132,7 @@ switchBtn.addEventListener('click', click =>{
     htmlElement.setAttribute('data-theme', 'dark')
     btnSwitchThemeImg.forEach(img => {
       img.classList.remove('active')
-      if(img.id == 'light-theme'){
+      if(img.id == 'dark-theme'){
         img.classList.add('active')
       }
     })
@@ -141,7 +141,7 @@ switchBtn.addEventListener('click', click =>{
     btnSwitchThemeImg.forEach(img => {
       img.classList.remove('active')
       
-      if(img.id == 'dark-theme'){
+      if(img.id == 'light-theme'){
         img.classList.add('active')
       }
     })
