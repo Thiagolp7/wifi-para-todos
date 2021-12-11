@@ -97,10 +97,6 @@
     line-height: 3.5rem;
   }
 
-  .container{
-    gap: 1rem;
-  }
-
   .aboutus,
   .howitworks,
   .whatiearn,
@@ -115,10 +111,12 @@
   .title{
     font-size: 2rem;
     line-height: 2.2rem;
+    margin-bottom: 2rem;
   }
   .desc{
     font-size: 1.6rem;
     line-height: initial;
+    margin-bottom: 1.5rem;
   }
 
   .intro__desc{
