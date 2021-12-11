@@ -150,8 +150,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 3rem 3rem; */
-  gap: 5rem;
   position: relative;
   padding: 9.5rem 3rem 12rem;
   transition: .2s ease-in-out;
@@ -486,6 +484,7 @@
   position: relative;
   z-index: 1;
   padding: 0 3rem;
+  margin-bottom: 3rem;
 }
 
 .intro__elements {

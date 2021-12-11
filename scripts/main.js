@@ -14,7 +14,7 @@ const btnSwitchThemeImg = document.querySelectorAll('.btn-switch-theme__img')
 
 function changeMenuBarBgcolor() {
   const pagePosition = window.scrollY
-  const menuBarBgOn = pagePosition > headerIntroPosition 
+  const menuBarBgOn = pagePosition > headerIntroPosition
 
   if (menuBarBgOn) {
     menuBar.classList.add('bg-active')

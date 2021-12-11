@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    bottom: -18rem;
+    bottom: -17.5rem;
     left: 0;
     background-color: var(--menu-bg-active);
     gap: 0;
@@ -88,13 +88,37 @@
 
   .intro__elements {
     width: initial;
-    margin: 9rem auto;
+    margin: 9rem auto 11rem;
     gap: 3.5rem;
   }
   
-  .intro__title{
+  .intro__title {
     font-size: 3rem;
     line-height: 3.5rem;
+  }
+
+  .container{
+    gap: 1rem;
+  }
+
+  .aboutus,
+  .howitworks,
+  .whatiearn,
+  .rewards,
+  .security,
+  .schools,
+  .joinus{
+    padding: 7.9rem 3rem 12rem;
+    gap: 0rem;
+  }
+
+  .title{
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .desc{
+    font-size: 1.6rem;
+    line-height: initial;
   }
 
   .intro__desc{
