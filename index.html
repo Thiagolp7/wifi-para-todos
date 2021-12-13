@@ -89,7 +89,7 @@
                 educação onde todos fazem parte.
               </p>
               <p class="desc reveal-200">
-                Desenvolveremos um aplicativo, onde os alunos poderam encontrar e se conectar a pontos de wifis públicos, além das redes dos colaboradores que se encontram perto de sua residência.  
+                Desenvolveremos um aplicativo, onde os alunos poderão encontrar e se conectar a pontos de wifis públicos, além das redes dos colaboradores que se encontram perto de sua residência.  
               </p>
           </div>
           <div class="container__art reveal-300">
@@ -158,7 +158,7 @@
                   <ul class="card__list">
                     <li class="card__list-item">Quer um futuro com mais inclusão e acesso para seus alunos.</li>
                     <li class="card__list-item">Se cadastra no nosso site.</li>
-                    <li class="card__list-item">Faz o cadastro dos alunos e disponibiliza o aplicativo com instalação online ou offline (em um pendrive).</li>
+                    <li class="card__list-item">Cadastra seus alunos e disponibiliza o aplicativo com instalação online ou offline (em um pendrive).</li>
                   </ul>
               </div>
             </div>
@@ -199,7 +199,7 @@
         <div class="container">
           <div class="elements">
             <h2 class="title title--color reveal-100">Recompensas exclusivas</h2>
-            <p class="desc desc--color reveal-200">Acumule pontos e troque por recompensas preparadas especialmente pelos nossos parceiros.</p>
+            <p class="desc desc--color reveal-200">Acumule pontos e troque por recompensas especialmente preparadas pelos nossos parceiros.</p>
           </div>
           <div class="rewards__container">
             <div class="reward__card reveal-300" title="Plano anual do curso Ignite Rocketseat">
@@ -265,9 +265,8 @@
               Sou professor como posso levar o projeto para minha escola?
             </h2>
             <p class="desc reveal-200">
-              Você poderá cadastrar sua escola. Nossa equipe
-              entrará em contato direto. Assim disponibilizando o acesso ao cadastro
-              dos alunos.
+              Se você é professor e quer levar o projeto para sua escola, você pode efetuar o cadastro da escola e nossa equipe entrará em contato para verificar os dados e liberar o cadastro dos alunos.<br><br>
+              Assim que a escola estiver cadastrada, ela fica responsável por cadastrar seus alunos e disponibilizar o nosso app online ou offline se for preciso.
             </p>
           </div>
           <div class="container__art reveal-300">
@@ -301,22 +300,28 @@
               <div class="form__content active" id="form-collaborators">
                 <form action="#joinus" class="form" method="post" >
                   <div class="form__line">
-                    <label for="name" class="form__label form__label--collaborators-color">
+                    <label for="collaborator-name" class="form__label form__label--collaborators-color" aria-labelledby="collaborator-name">
                       Nome completo
                     </label>
-                    <input type="text" class="form__input form__input--collaborators-color" id="name" required>
+                    <input type="text" class="form__input form__input--collaborators-color" id="collaborator-name" required>
                   </div>
                   <div class="form__line" >
-                    <label for="email" class="form__label form__label--collaborators-color">Email</label>
-                    <input type="email" id="email" class="form__input form__input--collaborators-color" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    <label for="collaborator-email" class="form__label form__label--collaborators-color" aria-labelledby="collaborator-email">
+                      Email
+                    </label>
+                    <input type="email" id="collaborator-email" class="form__input form__input--collaborators-color" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
                   </div>
                   <div class="form__line">
-                    <label for="password" class="form__label form__label--collaborators-color">Senha</label>
-                    <input type="password" id="password" class="form__input form__input--collaborators-color" min="6" required>
+                    <label for="collaborator-password" class="form__label form__label--collaborators-color" aria-labelledby="collaborator-password">
+                      Senha
+                    </label>
+                    <input type="password" id="collaborator-password" class="form__input form__input--collaborators-color" min="6" required>
                   </div>
                   <div class="form__line">
-                    <label for="address" class="form__label form__label--collaborators-color">Endereço</label>
-                    <input type="text" id="address" class="form__input form__input--collaborators-color" required>
+                    <label for="collaborator-address" class="form__label form__label--collaborators-color" aria-labelledby="collaborator-address">
+                      Endereço
+                    </label>
+                    <input type="text" id="collaborator-address" class="form__input form__input--collaborators-color" required>
                   </div>
                   <button class="form__button form__button--collaborators-color">Enviar</button>
                 </form>
@@ -324,18 +329,18 @@
               <div class="form__content" id="form-partners">
                 <form action="#joinus" class="form" method="post" >
                   <div class="form__line">
-                    <label for="name" class="form__label">
+                    <label for="partner-company" class="form__label" aria-labelledby="partner-company">
                       Nome da empresa
                     </label>
-                    <input type="text" class="form__input" id="name" required>
+                    <input type="text" class="form__input" id="partner-company" required>
                   </div>
                   <div class="form__line" >
-                    <label for="email" class="form__label">Email</label>
-                    <input type="email" id="email" class="form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    <label for="partner-email" class="form__label" aria-labelledby="partner-email">Email</label>
+                    <input type="email" id="partner-email" class="form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
                   </div>
                   <div class="form__line">
-                    <label for="address" class="form__label">Endereço</label>
-                    <input type="text" id="address" class="form__input" required>
+                    <label for="partner-address" class="form__label" aria-labelledby="partner-address">Endereço</label>
+                    <input type="text" id="partner-address" class="form__input" required>
                   </div>
                   <button class="form__button">Enviar</button>
                 </form>
@@ -343,28 +348,28 @@
               <div class="form__content" id="form-schools">
                 <form action="#joinus" class="form" method="post" >
                   <div class="form__line">
-                    <label for="name" class="form__label form__label--schools-color">
+                    <label for="teacher-name" class="form__label form__label--schools-color" aria-labelledby="teacher-name">
                       Seu nome completo
                     </label>
-                    <input type="text" class="form__input form__input--schools-color" id="name" required>
+                    <input type="text" class="form__input form__input--schools-color" id="teacher-name" required>
                   </div>
                   <div class="form__line">
-                    <label for="name" class="form__label form__label--schools-color">
+                    <label for="school-name" class="form__label form__label--schools-color" aria-labelledby="school-name">
                       Nome da escola
                     </label>
-                    <input type="text" class="form__input form__input--schools-color" id="name" required>
+                    <input type="text" class="form__input form__input--schools-color" id="school-name" required>
                   </div>
                   <div class="form__line" >
-                    <label for="email" class="form__label form__label--schools-color">Email</label>
-                    <input type="email" id="email" class="form__input form__input--schools-color" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    <label for="school-email" class="form__label form__label--schools-color" aria-labelledby="email">Email da escola</label>
+                    <input type="email" id="school-email" class="form__input form__input--schools-color" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
                   </div>
                   <div class="form__line">
-                    <label for="address" class="form__label form__label--schools-color">Telefone</label>
-                    <input type="tel" id="address" class="form__input form__input--schools-color" pattern="[0-9]{2} [0-9]{4,5}\-?[0-9]{4}" maxlength="12"  required>
+                    <label for="school-phone" class="form__label form__label--schools-color" aria-labelledby="school-phone">Telefone da escola</label>
+                    <input type="tel" id="school-phone" class="form__input form__input--schools-color" pattern="[0-9]{2} [0-9]{4,5}\-?[0-9]{4}" maxlength="12"  required>
                   </div>
                   <div class="form__line">
-                    <label for="address" class="form__label form__label--schools-color">Endereço</label>
-                    <input type="text" id="address" class="form__input form__input--schools-color" required>
+                    <label for="school-address" class="form__label form__label--schools-color" aria-labelledby="address">Endereço da escola</label>
+                    <input type="text" id="school-address" class="form__input form__input--schools-color" required>
                   </div>
                   <button class="form__button form__button--schools-color">Enviar</button>
                 </form>
