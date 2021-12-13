@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <!-- Scripts -->
-    <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/main-2.js"></script>
     <script defer src="./scripts/all.js"></script>
     <script defer src="https://unpkg.com/scrollreveal"></script>
     <script defer src="./scripts/scrollreveal.js"></script>
@@ -40,16 +40,16 @@
             </span>
           </a>
           <nav class="menu__nav">
-            <button class="btn-switch-theme" id="switch-theme">
-              <img src="./assets/icons/sun.svg" class="btn-switch-theme__img" alt="mudar para theme escuro" id="light-theme">
-              <img src="./assets/icons/moon.svg" class="btn-switch-theme__img active" alt="mudar para theme escuro" id="dark-theme">
+            <button class="btn-switch-theme" id="btn-switch-theme" >
+              <img src="./assets/icons/sun.svg" class="btn-switch-theme__img active" alt="sun" id="light-theme-img" title="mudar para tema escuro">
+              <img src="./assets/icons/moon.svg" class="btn-switch-theme__img" alt="moon" id="dark-theme-img">
             </button>
             <div class="menu__links-container" id="menu__links-container"> 
               <a href="#aboutus" class="menu__link">O que somos?</a>
               <a href="#howitworks" class="menu__link">Como Funciona?</a>
               <a href="#joinus" class="menu__link">Faça parte</a>
             </div>
-            <button class="menu-mobile" id="btn-menu-mobile">
+            <button class="menu-mobile" id="btn-menu-mobile" title="Menu">
               <div class="menu-mobile__line "></div>
               <div class="menu-mobile__line "></div>
             </button>
