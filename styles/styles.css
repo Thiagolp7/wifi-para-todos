@@ -78,7 +78,8 @@
   --collaborators-color: rgb(var(--red-light));
   --partners-color: rgb(var(--green-aqua));
   --schools-color: rgb(var(--blue-light));
-
+  --card-shadow-hover: rgb(var(--black));
+  
   --shadow: rgba(var(--dark-blue), 0.4);
 
   --reward-float-color: rgb(var(--white-2));
@@ -117,6 +118,7 @@
 
   --card-bg-color: rgb(var(--dark-blue));
   --reward-desc-bg: rgba(var(--green-aqua), 0.7);
+  --card-shadow-hover: rgb(var(--green-aqua));
 
   --form-tab-bg: rgb(39, 46, 80);
   --form-tab-color: rgb(209, 209, 209);
@@ -550,7 +552,7 @@
 
 .card:hover{
   transform: scale(1.03);
-  box-shadow: 0.3rem 0.3rem 1rem rgb(var(--green-aqua));
+  box-shadow: 0rem 0rem 2rem var(--card-shadow-hover);
 }
 
 .card__title {
