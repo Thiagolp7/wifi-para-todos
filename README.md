@@ -8,7 +8,7 @@
 
 ![image](https://user-images.githubusercontent.com/92824127/146018747-50c1fcd9-0596-4543-b0f0-2caf2e6a1990.png)
 
-> #### ➡️  Link: <a href="https://thiagolp7.github.io/wifi-para-todos/" target="_blank">https://thiagolp7.github.io/wifi-para-todos/<a>
+> #### ➡️ Link: https://thiagolp7.github.io/wifi-para-todos/
 
 > ## Ideia do projeto
 > Desenvolver uma landing page onde possa captar pessoas para participar de um projeto de aplicativo onde alunos possam se conectar em diversas redes wifi, públicas e disponibilizadas pelos colaboradores, pessoas que se cadastraram no site e receberam pontos por cada hora que o wifi foi compartilhado, podendo resgatar recompensas disponibilizadas pelas empresas parceiras. 
