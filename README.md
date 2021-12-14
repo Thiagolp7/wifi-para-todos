@@ -4,7 +4,7 @@
 
 
 > Neste desafio você irá desenvolver uma página web utilizando **HTML**, **CSS** e **JavaScript** que deverá resolver o seguinte problema         
-> 👉 "Pensando em construir o futuro, como você solucionaria os problemas de acesso à educação hoje, utilizando a tecnologia?"
+> 👉  "Pensando em construir o futuro, como você solucionaria os problemas de acesso à educação hoje, utilizando a tecnologia?"
 
 ![image](https://user-images.githubusercontent.com/92824127/146018747-50c1fcd9-0596-4543-b0f0-2caf2e6a1990.png)
 
